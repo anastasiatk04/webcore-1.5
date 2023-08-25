@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Regular.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F8F8;
+  font-family: "TT Lakes", serif;
+  position: relative;
+}
+
+.slider__item img[alt="go"]:hover {
+  transform: rotate(90deg); 
+  transition: transform 0.4s ease;
+}
+
+.slider__big--buttons button.hidden img {
+  margin-right: 10px; 
+  margin-bottom: 5px;
+}
+
+.slider__big--buttons button.visible img {
+  margin-bottom: 3px;
+}
